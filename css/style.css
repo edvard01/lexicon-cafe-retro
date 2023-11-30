@@ -1,0 +1,60 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  padding-right: 30px;
+  font-size: 48px;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 20;
+  background-color: red;
+  opacity: 0.7;
+  border-color: red;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+a {
+  font-family: "Spirax", sans-serif;
+}
+
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: (1fr, 3);
+  grid-template-areas:
+    "first-picture"
+    "second-picture"
+    "third-picture";
+  background-color: red;
+}
+
+.first-picture {
+  height: 100vh;
+  grid-area: "first-picture";
+  background-image: url(caffe-retro-assets/hot.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.second-picture {
+  margin-top: 8px;
+  height: 100vh;
+  grid-area: "second-picture";
+  background-image: url(caffe-retro-assets/juicy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.third-picture {
+  margin-top: 8px;
+  height: 100vh;
+  grid-area: "third-picture";
+  background-image: url(caffe-retro-assets/cosy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
