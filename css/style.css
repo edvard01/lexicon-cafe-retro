@@ -80,6 +80,7 @@ body {
 }
 
 .picture-content {
+  flex-grow: 1;
   margin-top: 10%;
   text-align: center;
   justify-content: center;
@@ -93,6 +94,9 @@ body {
   background-color: red;
   opacity: 0.75;
   padding: 15px;
+  width: 40%;
+  margin-left: 22%;
+  margin-right: 30%;
 }
 
 .flavor-text-right {
@@ -103,12 +107,23 @@ body {
   background-color: red;
   opacity: 0.75;
   padding: 15px;
+  width: 40%;
+  margin-right: 22%;
+  margin-left: 30%;
 }
 
 .price-box {
+  display: flex;
   color: white;
   background-color: black;
   opacity: 0.8;
-  width: 500px;
+  width: 70%;
   height: 250px;
+  margin-left: 15%;
+  font-size: 28px;
+}
+
+.price-box-item {
+  text-align: center;
+  flex-grow: 1;
 }
