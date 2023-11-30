@@ -4,28 +4,42 @@
 }
 
 .flex-item {
-  padding-right: 30px;
+  padding-right: 45px;
   font-size: 48px;
 }
 
 .navbar {
   position: sticky;
-  z-index: 20;
-  background-color: red;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(105, 34, 34);
   opacity: 0.7;
   border-color: red;
   padding-top: 8px;
   padding-bottom: 8px;
 }
+p {
+  opacity: 1;
+}
 
 a {
   font-family: "Spirax", sans-serif;
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+
+h1 {
+  font-family: "Spirax", sans-serif;
+  font-size: 72px;
+  color: red;
 }
 
 body {
+  z-index: 0;
   margin: 0px;
   display: grid;
-  grid-template-columns: (1fr, 3);
+  grid-template-columns: 1fr, 3fr;
   grid-template-areas:
     "first-picture"
     "second-picture"
@@ -34,11 +48,17 @@ body {
 }
 
 .first-picture {
+  margin-top: -75px;
+  width: 100%;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
   grid-area: "first-picture";
   background-image: url(caffe-retro-assets/hot.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .second-picture {
@@ -47,7 +67,7 @@ body {
   grid-area: "second-picture";
   background-image: url(caffe-retro-assets/juicy.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .third-picture {
@@ -56,5 +76,39 @@ body {
   grid-area: "third-picture";
   background-image: url(caffe-retro-assets/cosy.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.picture-content {
+  margin-top: 10%;
+  text-align: center;
+  justify-content: center;
+}
+
+.flavor-text-left {
+  color: white;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-size: 28px;
+  background-color: red;
+  opacity: 0.75;
+  padding: 15px;
+}
+
+.flavor-text-right {
+  color: white;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-size: 28px;
+  background-color: red;
+  opacity: 0.75;
+  padding: 15px;
+}
+
+.price-box {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  width: 500px;
+  height: 250px;
 }
