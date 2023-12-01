@@ -66,6 +66,10 @@ body {
 .second-picture {
   margin-top: 8px;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
   grid-area: "second-picture";
   background-image: url(caffe-retro-assets/juicy.jpg);
   background-repeat: no-repeat;
@@ -75,6 +79,10 @@ body {
 .third-picture {
   margin-top: 8px;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
   grid-area: "third-picture";
   background-image: url(caffe-retro-assets/cosy.jpg);
   background-repeat: no-repeat;
@@ -83,7 +91,7 @@ body {
 
 .picture-content {
   flex-grow: 1;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
   justify-content: center;
 }
